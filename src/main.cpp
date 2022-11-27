@@ -254,7 +254,7 @@ int main()
         fileMd << std::endl;
         fileMd << std::endl;
 
-        fileMd << "Сдесь можно увидеть выводы программы об эффективности алгоритмов в сравнении их друг с другом.";
+        fileMd << "Здесь можно увидеть выводы программы об эффективности алгоритмов в сравнении их друг с другом.";
         fileMd << std::endl;
         if (timeDivided1[0] > timeDivided2[0])
         {
@@ -274,12 +274,12 @@ int main()
 
         fileMd << std::endl;
 
-        if (inputTime1[0] > inputTime2[0])
+        if (inputTime1[0] < inputTime2[0])
         {
             fileMd << "Скорее всего 1-й алгоритм эффективнее считывает данные из файла";
             fileMd << std::endl;
         }
-        else if (inputTime1[0] < inputTime2[0])
+        else if (inputTime1[0] > inputTime2[0])
         {
             fileMd << "Скорее всего 2-й алгоритм эффективнее считывает данные из файла";
             fileMd << std::endl;
@@ -354,12 +354,12 @@ int main()
 
         fileMd << std::endl;
 
-        if (inputTime1[0] > inputTime2[0])
+        if (inputTime1[0] < inputTime2[0])
         {
             fileMd << "Most likely, the 1st algorithm reads data from the file more efficiently";
             fileMd << std::endl;
         }
-        else if (inputTime1[0] < inputTime2[0])
+        else if (inputTime1[0] > inputTime2[0])
         {
             fileMd << "Most likely, the 2nd algorithm reads data from the file more efficiently";
             fileMd << std::endl;
